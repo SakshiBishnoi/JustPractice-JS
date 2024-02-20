@@ -71,3 +71,16 @@ function called(){
 empty(called);
 
 lp(called); 
+
+
+
+function factoryfunc(min, max){
+    return function(num){
+        return num< min || num >max ? false : true;
+    }
+}
+const toddler  = factoryfunc(1 , 3);
+const kid = factoryfunc (4 ,12);
+const teenager = factoryfunc(13 ,19);
+const adult = factoryfunc(20 , 60 );
+const senior = factoryfunc(61 , Infinity);
