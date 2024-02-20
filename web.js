@@ -51,3 +51,23 @@ function sumArray(num){
  }
  
  console.log("sum of array is " + sumArray([50,55,100]));
+
+
+
+function empty(func){
+    func();
+ }
+
+ function lp(f){
+    for( let i=0; i < 10 ; i++) 
+       f(i);
+ }
+
+function called(){
+    const random = Math.floor((Math.random()) * 10) + 1;
+    console.log(random);
+}
+
+empty(called);
+
+lp(called); 
